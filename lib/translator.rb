@@ -6,7 +6,7 @@ def load_library(file_path)
   # code goes here
   emoticons_hash = YAML.load_file(file_path)
   
-  emoticons_hash.each do [faces, ]
+  emoticons_hash.each do [emoticon_word, faces]
   binding.pry
 end
 
