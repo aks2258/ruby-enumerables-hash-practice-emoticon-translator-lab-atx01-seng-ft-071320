@@ -21,7 +21,9 @@ def get_japanese_emoticon(file_path, emoticon)
   library.map do |word, translations|
     if translations[:english]==emoticon
       return translations[:japanese]
+    end
   end
+  "Sorry. Could not find the emoticon"
 end
 
 def get_english_meaning(file_path, emoticon)
