@@ -9,7 +9,8 @@ def load_library(file_path)
   
   emoticons_hash.each do [emoticon_word, faces]
     final_emoticon_hash[emoticon_word]={}
-    final_emoticon_hash[emoticon_word][:english]
+    final_emoticon_hash[emoticon_word][:english]=faces(0)
+    final_emoticon_hash[emoticon_word][:japanese]=faces
   end
   binding.pry
 end
