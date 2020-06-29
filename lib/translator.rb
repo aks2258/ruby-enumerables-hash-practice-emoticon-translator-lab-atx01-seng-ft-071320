@@ -18,7 +18,9 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   # code goes here
   library=load_library(file_path)
-  library.map do |word, translation
+  library.map do |word, translations|
+    
+  end
 end
 
 def get_english_meaning(file_path, emoticon)
